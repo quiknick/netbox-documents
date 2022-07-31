@@ -22,4 +22,4 @@ def file_upload(instance, filename):
     elif instance.name:
         filename = instance.name
 
-    return '{}{}_{}'.format(path, path_prepend, filename)
+    return f'{path}{path_prepend}_{filename}'
